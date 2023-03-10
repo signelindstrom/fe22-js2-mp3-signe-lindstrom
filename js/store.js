@@ -1,7 +1,7 @@
 import anime from "../node_modules/animejs/lib/anime.es.js";
 
-const baseUrl = "https://js2-mp3-store-default-rtdb.europe-west1.firebasedatabase.app/";
-
+const baseUrl =
+    "https://js2-mp3-store-default-rtdb.europe-west1.firebasedatabase.app/";
 
 // empty array for amount from firebase
 const amountArray = [];
@@ -19,7 +19,9 @@ async function getAll() {
         document.querySelector(`#img-${i}`).src = url;
         document.querySelector(`#name-${i}`).innerText = name;
         document.querySelector(`#price-${i}`).innerText = `Price: ${price}kr`;
-        document.querySelector(`#amount-${i}`).innerText = `Left in stock: ${amount}`;
+        document.querySelector(
+            `#amount-${i}`
+        ).innerText = `Left in stock: ${amount}`;
 
         amountArray.push(amount);
     }
@@ -27,21 +29,19 @@ async function getAll() {
 
 getAll();
 
-
 // go to cart + cart animation
 document.querySelector("#cartIcon").addEventListener("click", () => {
     setTimeout(() => {
         location.assign("../html/cart.html");
-    }, 400)
+    }, 400);
 
     anime({
-        targets: '#cartIcon',
-        translateX: '680',
+        targets: "#cartIcon",
+        translateX: "680",
         duration: 400,
-        easing: 'linear'
-    })
+        easing: "linear",
+    });
 });
-
 
 // view localStorage
 const appleStorage = localStorage.getItem("apples");
@@ -51,7 +51,6 @@ const orangeStorage = localStorage.getItem("oranges");
 const mangoStorage = localStorage.getItem("mangos");
 
 const ItemsInCart = localStorage.getItem("itemsInCart");
-
 
 // if localStorage is null => make sure it's number
 let appleCount = Number(appleStorage);
@@ -84,7 +83,6 @@ if (ItemsInCart == null) {
     totalItems = 0;
 }
 
-
 // set localStorage
 localStorage.setItem("apples", appleCount);
 localStorage.setItem("pears", pearCount);
@@ -96,16 +94,16 @@ localStorage.setItem("itemsInCart", totalItems);
 const items = document.querySelector("#cartAmount");
 items.innerText = `Items in your cart: ${localStorage.getItem("itemsInCart")}`;
 
-
 // add products to cart + update counters/localStorage
 document.querySelector("#btn-0").addEventListener("click", () => {
-
     if (amountArray[0] !== 0 && appleCount < amountArray[0]) {
         appleCount++;
         localStorage.setItem("apples", appleCount);
         totalItems++;
         localStorage.setItem("itemsInCart", totalItems);
-        items.innerText = `Items in your cart: ${localStorage.getItem("itemsInCart")}`;
+        items.innerText = `Items in your cart: ${localStorage.getItem(
+            "itemsInCart"
+        )}`;
     } else {
         alert("Out of stock");
     }
@@ -117,7 +115,9 @@ document.querySelector("#btn-1").addEventListener("click", () => {
         localStorage.setItem("pears", pearCount);
         totalItems++;
         localStorage.setItem("itemsInCart", totalItems);
-        items.innerText = `Items in your cart: ${localStorage.getItem("itemsInCart")}`;
+        items.innerText = `Items in your cart: ${localStorage.getItem(
+            "itemsInCart"
+        )}`;
     } else {
         alert("Out of stock");
     }
@@ -129,38 +129,41 @@ document.querySelector("#btn-2").addEventListener("click", () => {
         localStorage.setItem("bananas", bananaCount);
         totalItems++;
         localStorage.setItem("itemsInCart", totalItems);
-        items.innerText = `Items in your cart: ${localStorage.getItem("itemsInCart")}`;
+        items.innerText = `Items in your cart: ${localStorage.getItem(
+            "itemsInCart"
+        )}`;
     } else {
         alert("Out of stock");
     }
 });
 
 document.querySelector("#btn-3").addEventListener("click", () => {
-
     if (amountArray[3] !== 0 && orangeCount < amountArray[3]) {
         orangeCount++;
         localStorage.setItem("oranges", orangeCount);
         totalItems++;
         localStorage.setItem("itemsInCart", totalItems);
-        items.innerText = `Items in your cart: ${localStorage.getItem("itemsInCart")}`;
+        items.innerText = `Items in your cart: ${localStorage.getItem(
+            "itemsInCart"
+        )}`;
     } else {
         alert("Out of stock");
     }
 });
 
 document.querySelector("#btn-4").addEventListener("click", () => {
-
     if (amountArray[4] !== 0 && mangoCount < amountArray[4]) {
         mangoCount++;
         localStorage.setItem("mangos", mangoCount);
         totalItems++;
         localStorage.setItem("itemsInCart", totalItems);
-        items.innerText = `Items in your cart: ${localStorage.getItem("itemsInCart")}`;
+        items.innerText = `Items in your cart: ${localStorage.getItem(
+            "itemsInCart"
+        )}`;
     } else {
         alert("Out of stock");
     }
 });
-
 
 // click clear cart btn => clear localStorage
 document.querySelector("#clear-btn").addEventListener("click", () => {

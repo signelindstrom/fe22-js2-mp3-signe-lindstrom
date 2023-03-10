@@ -1,10 +1,11 @@
 body {
-    background-color: #CFFFB3;
+    background-color: #cfffb3;
     color: black;
     font-family: "Work Sans", sans-serif;
 }
 
-#product-container, #cart-container {
+#product-container,
+#cart-container {
     border: 5px solid white;
     padding: 2rem;
     margin: 2rem;
@@ -16,7 +17,7 @@ body {
 
 #cart-container {
     background-color: white;
-    border: 5px solid  yellowgreen;
+    border: 5px solid yellowgreen;
     flex-flow: column wrap;
 }
 
@@ -30,7 +31,7 @@ body {
 header {
     text-align: center;
     background-color: white;
-    color: #3A5743;
+    color: #3a5743;
     border: 5px solid yellowgreen;
 }
 
@@ -41,7 +42,7 @@ form {
 }
 
 header h2 {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .product-card p {
@@ -54,15 +55,15 @@ img {
 
 #clear-btn,
 #back-btn {
-  margin-bottom: 10px;
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 20;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  text-decoration: underline;
+    margin-bottom: 10px;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 20;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-decoration: underline;
 }
 
 p {
@@ -75,8 +76,8 @@ p {
 }
 
 #cart-message {
-    font-family: 'Be Vietnam Pro', sans-serif;
-    color:#3A5743;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #3a5743;
 }
 
 .button-17 {
@@ -138,13 +139,13 @@ p {
         rgba(60, 64, 67, 0.15) 0 8px 12px 6px;
 }
 
-.product-card .button-17{
-  font-size: 12px;
+.product-card .button-17 {
+    font-size: 12px;
 }
 
-#cart-container .button-17{
-  height: 40px;
-  font-size: 20px;
-  font-family: 'Be Vietnam Pro', sans-serif;
-  margin-top: 20px;
+#cart-container .button-17 {
+    height: 40px;
+    font-size: 20px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    margin-top: 20px;
 }
