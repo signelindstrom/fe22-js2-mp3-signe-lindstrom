@@ -70,7 +70,7 @@ function displayAll(data) {
             productName.innerText = key.charAt(0).toUpperCase() + key.slice(1);
 
             const productAmount = document.createElement("h3");
-            productAmount.innerText = value;
+            productAmount.innerText = `Number of items: ${value}`;
 
             const productPrice = document.createElement("p");
             const productSum = document.createElement("p");
@@ -83,33 +83,33 @@ function displayAll(data) {
                 productPrice.innerText = `Price per item: ${applePrice}:-`;
                 sum = applePrice * value;
                 productSum.innerText =
-                    `Price for all ${key}: ${sum}`;
+                    `Price for all ${key}: ${sum}:-`;
 
 
             } else if (key == "pears") {
                 productPrice.innerText = `Price per item: ${pearPrice}:-`;
                 sum = pearPrice * value;
                 productSum.innerText =
-                    `Price for all ${key}: ${sum}`;
+                    `Price for all ${key}: ${sum}:-`;
 
 
             } else if (key == "bananas") {
                 productPrice.innerText = `Price per item: ${bananaPrice}:-`;
                 sum = bananaPrice * value;
                 productSum.innerText =
-                    `Price for all ${key}: ${sum}`;
+                    `Price for all ${key}: ${sum}:-`;
 
             } else if (key == "oranges") {
                 productPrice.innerText = `Price per item: ${orangePrice}:-`;
                 sum = orangePrice * value;
                 productSum.innerText =
-                    `Price for all ${key}: ${sum}`;
+                    `Price for all ${key}: ${sum}:-`;
 
             } else if (key == "mangos") {
                 productPrice.innerText = `Price per item: ${mangoPrice}:-`;
                 sum = mangoPrice * value;
                 productSum.innerText =
-                    `Price for all ${key}: ${sum}`;
+                    `Price for all ${key}: ${sum}:-`;
 
             }
 
@@ -132,7 +132,7 @@ function displayAll(data) {
         const buyBtn = document.createElement("button");
         divContainer.append(buyBtn);
         buyBtn.innerText = 'BUY';
-        buyBtn.classList.add('buy-btn')
+        buyBtn.classList.add('button-17')
         purchaseComplete(buyBtn);
     }
 }
