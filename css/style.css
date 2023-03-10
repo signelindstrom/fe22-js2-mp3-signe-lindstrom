@@ -1,0 +1,75 @@
+body {
+    background-color: lightpink;
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#product-container, #cart-container {
+    border: 5px solid white;
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#cart-container {
+    background-color: white;
+    border: 5px solid lightcoral;
+    flex-flow: column wrap;
+}
+
+.product-card {
+    border: 7px solid lightcoral;
+    padding: 2rem;
+    margin: 2rem;
+    width: 10rem;
+    flex-basis: 20%;
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    border: 5px solid lightcoral;
+    color:lightcoral
+}
+
+form {
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#search-text {
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.product-card p {
+    font-size: 10px; 
+}
+
+img{
+    height: 100px;
+}
+
+#clear-btn{
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 15px;
+}
+
+#cartIcon{
+    height: 50px;
+    cursor: pointer;
+}
+
+.buy-btn{
+    margin: auto;
+    width: 100px;
+}
