@@ -35,12 +35,6 @@ header {
     border: 5px solid yellowgreen;
 }
 
-form {
-    justify-content: center;
-    text-align: center;
-    padding-top: 20px;
-}
-
 header h2 {
     font-family: "Be Vietnam Pro", sans-serif;
 }
@@ -80,7 +74,7 @@ p {
     color: #3a5743;
 }
 
-.button-17 {
+.btns {
     align-items: center;
     appearance: none;
     background-color: #fff;
@@ -88,7 +82,6 @@ p {
     border-style: none;
     box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
         rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
-    /* box-sizing: border-box; */
     color: #3c4043;
     cursor: pointer;
     fill: currentcolor;
@@ -103,47 +96,27 @@ p {
     white-space: nowrap;
 }
 
-.button-17:hover {
+.btns:hover {
     background: #f6f9fe;
     color: darkgreen;
 }
 
-.button-17:active {
+.btns:active {
     box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
         0 8px 12px 6px rgb(60 64 67 / 15%);
     outline: none;
 }
 
-.button-17:focus {
+.btns:focus {
     outline: none;
     border: 2px solid darkgreen;
 }
 
-.button-17:not(:disabled) {
-    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
-        rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
-}
-
-.button-17:not(:disabled):hover {
-    box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0,
-        rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
-}
-
-.button-17:not(:disabled):focus {
-    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
-        rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
-}
-
-.button-17:not(:disabled):active {
-    box-shadow: rgba(60, 64, 67, 0.3) 0 4px 4px 0,
-        rgba(60, 64, 67, 0.15) 0 8px 12px 6px;
-}
-
-.product-card .button-17 {
+.product-card .btns {
     font-size: 12px;
 }
 
-#cart-container .button-17 {
+#cart-container .btns {
     height: 40px;
     font-size: 20px;
     font-family: "Be Vietnam Pro", sans-serif;
