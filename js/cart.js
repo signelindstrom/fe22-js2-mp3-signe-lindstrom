@@ -124,7 +124,7 @@ function displayAll(data) {
         const buyBtn = document.createElement("button");
         divContainer.append(buyBtn);
         buyBtn.innerText = "BUY";
-        buyBtn.classList.add("button-17");
+        buyBtn.classList.add("btns");
         purchaseComplete(buyBtn);
     }
 }
